@@ -30,7 +30,7 @@ function App() {
   const handleCalculate = () => {
     setResult((prevResult) => {
       try {
-        // Use eval to perform the calculations (Note: In a real-world application, it's safer to use a math library)
+        
         return eval(prevResult).toString();
       } catch (error) {
         return 'Error';
